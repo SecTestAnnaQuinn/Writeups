@@ -45,7 +45,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 We also find a file for configuration of squid 
 
-______________________________
 
 
 4. Let's go back to the admin page and poke around
@@ -63,7 +62,7 @@ There is a dropdown in the top right with many options
 Under Archive, clicking on Listen does nothing, but clicking on Download gives us archive.tar.  Let's store that for later.
 
 Admin takes us to an Admin Shoutbox which gives us some chat logs
-```shell
+```test
 
     Admin Shoutbox
 
@@ -103,7 +102,7 @@ Turns out we were on the right track!  It appears that there may also be a backu
 
 There's a lot of data, but none useful.  Guess we'll have to try figuring out how to deborg the stuff with the username and password we found earlier.
 
-___________
+___________________________
 
 ## Vulnerability Assessment
 
@@ -111,6 +110,7 @@ ___________
 
     - Now we can go to the file for dev and check final_archive, but it needs a passphrase for the key, luckily we have that!
 
+_____________________________
 ## Exploitation
 
 1. Let's crack the hash real quick with John.  This leads us to the password *redacted*.  When we try using that to check final_archive using borg, we can see that it is indeed confirmed to be a borg archive.  
