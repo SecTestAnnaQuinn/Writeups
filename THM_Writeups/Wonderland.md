@@ -1,6 +1,4 @@
-Wonderland
-
-10.10.124.89
+# Wonderland
 
 This is for the Medium difficulty Wonderland machine found at (https://tryhackme.com/room/wonderland)
 _____________
@@ -77,16 +75,18 @@ After wgetting them down, I run xxd on the alice_door files.  The png doesn't sh
 Taking this information I run exiftool on the file and find the following:
 
 Software                        : Adobe Photoshop CS3 Macintosh
+
 Modify Date                     : 2008:01:20 01:49:10
+
 Thumbnail Image                 : (Binary data 12311 bytes, use -b option to extract)
 
 Not much here currently.  Though it is curious that this file has exifdata.  Let's try using steghide to find any other hidden info in the images.
 
 Using it on white_rabbit_1.jpg without a passphrase leads us to `"Follow the r a b b i t"`  
 
-Using rabbit as a steghide password on the other images leads us nowhere.  Wait, one of the directories was /r...
+Using rabbit as a steghide password on the other images leads us nowhere.  Wait, one of the directories was http://*ip*/r...
 
-r/a
+http://*ip*/r/a
 
 ```text
 Keep Going.
@@ -95,7 +95,7 @@ Keep Going.
 ```
 
 
-r/a/b
+http://*ip*/r/a/b
 
 ```text
 Keep Going.
@@ -104,7 +104,7 @@ Keep Going.
 ```
 
 
-r/a/b/b 
+http://*ip*/r/a/b/b 
 
 ```text
 Keep Going.
@@ -113,7 +113,7 @@ Keep Going.
 ```
 
 
-r/a/b/b/i
+http://*ip*/r/a/b/b/i
 
 ```text
 Keep Going.
@@ -123,7 +123,7 @@ Keep Going.
 
 
 
-r/a/b/b/i/t
+http://*ip*/r/a/b/b/i/t
 
 ```text
 Open the door and enter wonderland
