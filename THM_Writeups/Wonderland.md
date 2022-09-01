@@ -74,11 +74,10 @@ After wgetting them down, I run xxd on the alice_door files.  The png doesn't sh
 
 Taking this information I run exiftool on the file and find the following:
 
-Software                        : Adobe Photoshop CS3 Macintosh
 
-Modify Date                     : 2008:01:20 01:49:10
-
-Thumbnail Image                 : (Binary data 12311 bytes, use -b option to extract)
+`Software                        : Adobe Photoshop CS3 Macintosh`
+`Modify Date                     : 2008:01:20 01:49:10`
+`Thumbnail Image                 : (Binary data 12311 bytes, use -b option to extract)`
 
 Not much here currently.  Though it is curious that this file has exifdata.  Let's try using steghide to find any other hidden info in the images.
 
