@@ -35,7 +35,8 @@ As we explore the http site, visiting the /simple directory sends us to a cms si
 The site on its own doesn't tell us much, but it does have the following text:
 
 ```text
-To get to the Administration Console you have to login as the administrator (with the username/password you mentioned during the installation process) on your site
+To get to the Administration Console you have to login as the administrator 
+(with the username/password you mentioned during the installation process) on your site
 at http://yourwebsite.com/cmsmspath/admin. If this is your site click here to login.
 ```
 An admin login page does sound pretty juicy, let's check that out as well.
